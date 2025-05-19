@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boutique en ligne</title>
-  <link rel="stylesheet" href="code2.css">
+  <link rel="stylesheet" href="code2.css" />
 </head>
 <body>
   <header>
-    <h1> 🛒Hopeshop</h1>
+    <h1>🛒 Hopeshop</h1>
     <nav>
-      <input type="text" id="searchBar" placeholder="Rechercher...">
+      <input type="text" id="searchBar" placeholder="Rechercher..." />
       <button onclick="subscribe()">S’abonner</button>
       <button onclick="openWhatsApp()">
-        <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp" style="vertical-align: middle;">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp" style="vertical-align: middle;" />
         WhatsApp
       </button>
     </nav>
@@ -21,10 +21,57 @@
 
   <div id="products"></div>
 
+  <!-- Section Suggestions -->
+  <section>
+    <h2 style="text-align:center;">💡 Suggestions</h2>
+    <div id="suggested" class="suggestion-zone"></div>
+  </section>
+
+  <!-- Section Pour moi -->
+  <section>
+    <h2 style="text-align:center;">✨ Pour moi</h2>
+    <div id="personalized" class="suggestion-zone"></div>
+  </section>
+
+  <!-- Panier -->
   <div id="cart">
     <h3>Panier</h3>
     <ul id="cartItems"></ul>
+    <button onclick="orderNow()">Commander maintenant</button>
   </div>
+
+  <!-- Réseaux sociaux -->
+<section id="socials">
+  <h2>📱 Suivez-nous</h2>
+  <p>Pour plus d'informations, contactez-nous au <strong>693636804 / 679877737</strong></p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/hopeinc237" target="_blank" title="Instagram">
+      <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com/hopeinc237" target="_blank" title="Facebook">
+      <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" />
+    </a>
+    <a href="https://www.tiktok.com/@hopeinc237" target="_blank" title="TikTok">
+      <img src="https://img.icons8.com/ios-filled/50/000000/tiktok.png" alt="TikTok" />
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>📞 Si vous voulez plus d'informations, veuillez nous contacter au <strong>693636804 / 679877737</strong></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/hopeinc237" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/instagram-new.png" alt="Instagram" class="social-icon" />
+      </a>
+      <a href="https://www.facebook.com/hopeinc237" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/facebook-new.png" alt="Facebook" class="social-icon" />
+      </a>
+      <a href="https://www.tiktok.com/@hopeinc237" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/tiktok.png" alt="TikTok" class="social-icon" />
+      </a>
+    </div>
+  </footer>
 
   <script src="code3.js"></script>
 </body>
